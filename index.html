@@ -20,6 +20,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 100vh;
+        padding-top: 80px;
+      }
+      @media (min-height: 800px) {
+        main {
+          min-height: 700px;
+        }
       }
       main {
         padding: 1rem;
@@ -50,12 +57,31 @@
       p {
         margin: 1rem 0 0 0;
       }
+      iframe {
+        display: block;
+        margin: 0 auto;
+        border: none;
+        width: 100%;
+        max-width: 800px;
+        height: 720px;
+        max-height: 800px;
+        padding-top: 30px;
+      }
+      @media (min-width: 768px) {
+        /* Adjust the width and height for desktop screens */
+        iframe {
+          width: 610px;
+          height: 500px;
+        }
+      }
     </style>
   </head>
   <body>
     <main>
       <h1>feedishco.com</h1>
-      <p>Our website is under construction.</p>
+      <p>Our team is building something awesome. Sign up to be the first to know!</p>
+      <iframe scrolling="yes" src="https://cdn.forms-content.sg-form.com/663361cc-bbc3-11ed-aeb8-22ecaf58bf51"/>
+      
     </main>
   </body>
 </html>
